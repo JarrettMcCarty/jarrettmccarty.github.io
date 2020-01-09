@@ -16,7 +16,6 @@ body, html {
 .soon {
     width: 100%;
     text-align: center;
-    font-size: 5.5em;
     position: absolute;
-    top: 10%;
+    top: 275px;
 }
