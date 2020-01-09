@@ -1,0 +1,22 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #fff;
+    overflow: hidden;
+}
+
+.logo-pos
+{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+.soon
+{
+    width: 100%;
+    text-align: center;
+    font-size: 0.5em;
+    position: absolute;
+}
