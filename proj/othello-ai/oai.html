@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -8,9 +9,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.5.0">
   <meta name="author" content="Jarrett McCarty">
-  <meta name="description" content="Projects">
-  <link rel="alternate" hreflang="en-us" href="https://jarrettmccarty.github.io/proj/">
-  <meta name="theme-color" content="#0e7aa3">
+  <meta name="description" content="Othello AI implementation in Python">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://github.com/JarrettMcCarty/CISS-450-Othello-AI">
+  <meta name="theme-color" content="#4864bf">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
@@ -19,23 +23,55 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,700%7CRoboto+Mono%7CLato:400,700%7COpen+Sans&display=swap">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="../img/JM_logo_1.png">
-  <link rel="apple-touch-icon" type="image/png" href="../img/JM_logo_1.png">
+  <link rel="icon" type="image/png" href="/img/JM_logo_1.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/JM_logo_1.png">
 
-  <link rel="canonical" href="https://jarrettmccarty.github.io/proj/">
+  <link rel="canonical" href="https://github.com/JarrettMcCarty/CISS-450-Othello-AI">
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Jarrett McCarty">
-  <meta property="og:url" content="https://jarrettmccarty.github.io/proj/">
-  <meta property="og:title" content="Jarrett McCarty | Projects">
-  <meta property="og:description" content="Projects"><meta property="og:image" content="https://jarrettmccarty.github.io/img/JM_logo_1">
-  <meta property="twitter:image" content="https://jarrettmccarty.github.io/img/JM_logo_1"><meta property="og:locale" content="en-us"> 
-      <meta property="article:published_time" content="2019-01-01T00:00:00&#43;00:00"> 
-    <meta property="article:modified_time" content="2019-07-21T21:02:29&#43;05:30">
-  <title>Jarrett McCarty | Projects</title>
+  <meta property="og:url" content="https://github.com/JarrettMcCarty/CISS-450-Othello-AI">
+  <meta property="og:title" content="Jarrett McCarty | Othello AI">
+  <meta property="twitter:image" content="/img/JM_logo_1.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2018-07-01T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-09-09T20:11:57&#43;05:30">
+<!--<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://github.com/JarrettMcCarty/CISS-350-BinarySearchTree"
+  },
+  "headline": "Crowdsourced Data Simulator",
+  
+  "datePublished": "2018-07-01T00:00:00Z",
+  "dateModified": "2019-09-09T20:11:57+05:30",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Jarrett McCarty"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jarrett McCarty",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/img/JM_logo_1.png"
+    }
+  },
+  "description": "A program that simulates answers given by a crowd to multiple choice questions with either a single or multiple answers correct, and writes it to a CSV"
+}
+</script>-->
+  <title>Jarrett McCarty | Othello AI</title>
+
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -73,21 +109,22 @@
 <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    <a class="navbar-brand" href="/"><img id="logo" src="../img/JM_logo_1.png"></a> 
+    <a class="navbar-brand" href="/"><img id="logo" src="/img/JM_logo_1.png"></a> 
       <a class="navbar-brand" href="/">Jarrett McCarty</a>
       
       <button type="button" class="navbar-toggler" data-toggle="collapse"
               data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fas fa-bars"></i></span>
       </button>
-
+      
     <div class="collapse navbar-collapse" id="navbar">
+
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link  active" href="/" data-target="[]"><span>Home</span></a>
+          <a class="nav-link  active" href="/"><span>Home</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  active" href="#" data-target="[]"><span>Projects</span></a>
+          <a class="nav-link " href="/proj/proj.html"><span>Projects</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="/exp/exp.html"><span>Experience</span></a>
@@ -95,112 +132,85 @@
         <li class="nav-item">
           <a class="nav-link " href="/cont/cont.html"><span>Contact</span></a>
         </li>
-        
-        <!--
         <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>-->
-        <li class="nav-item">
-          <a class="nav-link " href="/res/Jarrett_McCarty_Resume.pdf" target="_blank" ><span>Resume</span></a>
-      </li>
+            <a class="nav-link " href="/res/Jarrett_McCarty_Resume.pdf" target="_blank" ><span>Resume</span></a>
+        </li>
+        <br><br>
         <!--<li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
         </li>-->
         
+
       </ul>
 
     </div>
   </div>
 </nav>
-<span class="js-widget-page d-none"></span>
-  <section id="projects" class="home-section wg-portfolio   "  >
-    <div class="container">
-<div class="margin-auto">
 
-  <div class="center-text">
-    <h1 class="mt-0">Past Projects</h1>
-    
-  </div>
+  <article class="article article-project">
+<div class="article-container pt-3">
+  <h1>Othell AI</h1>
+
+<div class="article-metadata">
   <div>
-      <span class="d-none default-project-filter">*</span>
-      <div class="project-toolbar">
-        <div class="project-filters">
-          <div class="btn-toolbar">
-            <div class="btn-group flex-wrap">
-                <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
-                <a href="#" data-filter=".js-id-class-projects" class="btn btn-primary btn-lg">Class Projects</a>
-                <a href="#" data-filter=".js-id-c-plus-plus" class="btn btn-primary btn-lg">C++</a>
-                <a href="#" data-filter=".js-id-python" class="btn btn-primary btn-lg">Python</a>
-                <a href="#" data-filter=".js-id-other" class="btn btn-primary btn-lg">Other</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    <div class="isotope projects-container js-layout-masonry ">
-
-<div class="project-card project-item isotope-item js-id-c-plus-plus js-id-class-projects js-binary-search-tree js-ciss-350 js-algorithm">
-  <div class="card">
-    
-    <div class="card-text">
-      <h4><a href="/proj/bst/bst.html" >Binary Search Tree</a></h4>
-      
-      <div class="article-style">
-        <p>Binary Search Tree Implementation using C++</p>
-      </div>
-      
-    </div>
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="https://jarrettmccarty.github.io">Jarrett McCarty</a></span>
   </div>
 </div>
+<div class="btn-links mb-3">
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/JarrettMcCarty/CISS-450-Othello-AI" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>
+    Code
+  </a>
 
-<div class="project-card project-item isotope-item js-id-doubly-linked-list js-id-c-plus-plus js-id-class-projects js-id-ciss-350 js-id-algorithm">
-  <div class="card">
-    
-    <div class="card-text">
-      <h4><a href="/proj/dll/dll.html" >Doubly Linked List</a></h4>
-      
-      <div class="article-style">
-        <p>Doubly Linked List Implementation using C++</p>
-      </div>
-      
-    </div>
-  </div>
+
 </div>
 
-<div class="project-card project-item isotope-item js-id-quad-tree js-id-c-plus-plus js-id-class-projects js-id-ciss-350 js-id-algorithm">
-  <div class="card">
-    
-    <div class="card-text">
-      <h4><a href="/proj/qt/qt.html" >Quad-Tree</a></h4>
-      
-      <div class="article-style">
-        <p>QuadTree Implementation for collision detection with visual ...</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
 
-<div class="project-card project-item isotope-item js-id-othello-ai js-id-class-projects js-id-ciss-350 js-id-algorithm js-id-python">
-  <div class="card">
-    
-    <div class="card-text">
-      <h4><a href="/proj/othello-ai/oai.html" >Othello AI</a></h4>
-      
-      <div class="article-style">
-        <p>Othello AI Implementation for playing against other othello ai in competion ...</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
   
-    </div>
-
-  </div>
 </div>
 
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+        <p>Program implementing an Othello AI in Python</p>
+
     </div>
-  </section>
+
+    
+
+
+
+
+
+
+<!--
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/synthetic-dataset/">synthetic-dataset</a>
+  
+  <a class="badge badge-light" href="/tags/crowdsourcing/">crowdsourcing</a>
+  
+  <a class="badge badge-light" href="/tags/simulator/">simulator</a>
+  
+  <a class="badge badge-light" href="/tags/crowdsourced-aggregation/">crowdsourced-aggregation</a>
+  
+  <a class="badge badge-light" href="/tags/crowdsourced-annotations/">crowdsourced-annotations</a>
+  
+  <a class="badge badge-light" href="/tags/machine-learning/">machine-learning</a>
+  
+  <a class="badge badge-light" href="/tags/python/">python</a>
+  
+</div>
+-->
+    <div class="project-related-pages content-widget-hr">    
+    </div>
+  </div>
+</article>
     <script src="/js/mathjax-config.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
@@ -209,8 +219,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
       <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
     <script>hljs.initHighlightingOnLoad();</script>
+    
     <script>
       const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
       const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
@@ -221,6 +234,7 @@
         'talk' : "Talks"
         };
     </script>
+    
     <script id="search-hit-fuse-template" type="text/x-template">
       <div class="search-hit" id="summary-{{key}}">
       <div class="search-hit-content">
@@ -232,10 +246,14 @@
       </div>
       </div>
     </script>
+    
+
+    
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
     <script src="/js/main.js"></script>
-
   <div class="container">
     <footer class="site-footer">
   
@@ -248,9 +266,6 @@
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 
     <br>
-    
-
-    
     <span class="float-right" aria-hidden="true">
       <a href="#" class="back-to-top">
         <span class="button_icon">
@@ -262,8 +277,6 @@
   </p>
 </footer>
   </div>
-  
-
   
 <div id="modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
