@@ -1,0 +1,194 @@
+@import "../../global.scss";
+
+.resume-grid
+{
+  color: black;
+}
+
+body {background-color: black;}
+
+.resume-grid{
+  margin-top:120px;
+  display:flex;
+  grid-column:3 / span 8;
+  color: white; 
+  margin-left: 20em;
+}
+.resume-experience{
+  width:calc(50% - 60px);
+  margin-right:120px;
+  color: white; 
+}
+.resume-heading{
+  margin-bottom:32px;
+  color: white; 
+}
+.resume-title{
+  font-weight:800;
+  color: white; 
+}
+.resume-caption{
+  margin:0;
+  color:var(--color-primary-300);
+  display:flex;
+  font-weight:500;
+  margin-top:8px;
+  color: white; 
+}
+.resume-item{
+  margin-bottom:24px;
+  color: white; 
+}
+.resume-item:last-child{
+  margin-bottom:0;
+  color: white; 
+}
+/*
+.resume-timestamp{
+  margin-left:auto;
+  color: white; 
+}
+*/
+.resume-role
+{
+  margin-top:4px;
+  color: white;
+  .dot {
+    height: 5px;
+    width: 5px;
+    background-color:white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+  }
+}
+
+h5{
+  font-size:25px;
+  letter-spacing:.4px;
+  margin:0 
+}
+h6{
+  font-size:21px;
+  letter-spacing:.24px;
+  margin:0;
+  font-weight:500 
+}
+h3{
+  font-size:50px 
+}
+
+.resume-experience{
+  width:auto;
+  margin:0;
+  color: white; 
+}
+/*
+.resume-caption{
+  display:block;
+  margin-top:4px;
+  color: white; 
+}
+*/
+.resume-item{
+  margin-bottom:32px;
+  color: white; 
+}
+
+.resume-timestamp{
+  margin-top:4px;
+  color: white; 
+}
+
+.resume-experience{
+  margin-bottom:80px;
+  color: white;
+}
+.resume-featured{
+  width:auto;
+  color: white; 
+  margin-left: 50em;
+}
+
+.portfolio {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 50px;
+    color: white;
+    @include mobile{
+      font-size: 20px;
+    }
+  }
+
+  ul {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    @include mobile{
+      margin: 10px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include mobile{
+      width: 100%;
+    }
+
+    .item {
+      width: 220px;
+      height: 150px;
+      border-radius: 20px;
+      border: 1px solid rgb(0, 183, 255);;
+      margin: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+      transition: all .5s ease;
+      cursor: pointer;
+
+      @include mobile{
+        width: 130px;
+        height: 100px;
+      }
+
+      h3 {
+        position: absolute;
+        font-size: 20px;
+        color:white;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+
+      &:hover {
+        background-color: $mainColor;
+        img {
+          opacity: 0.2;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}
