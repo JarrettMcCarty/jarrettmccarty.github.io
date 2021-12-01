@@ -6,13 +6,21 @@
 }
 
 body {background-color: black;}
-
-.resume-grid{
-  margin-top:120px;
-  display:flex;
-  grid-column:3 / span 8;
-  color: white; 
-  margin-left: 20em;
+  .resume{
+    margin-top:120px;
+    display:flex;
+    grid-column:3 / span 8 
+}
+.grid{
+  /*
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  grid-column-gap:16px;
+  margin:0 72px;
+  */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 200px));
+  justify-content: space-between;
 }
 .resume-experience{
   width:calc(50% - 60px);
@@ -34,6 +42,11 @@ body {background-color: black;}
   font-weight:500;
   margin-top:8px;
   color: white; 
+  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
 .resume-item{
   margin-bottom:24px;
@@ -43,6 +56,7 @@ body {background-color: black;}
   margin-bottom:0;
   color: white; 
 }
+
 /*
 .resume-timestamp{
   margin-left:auto;
@@ -80,32 +94,7 @@ h3{
   font-size:50px 
 }
 
-.resume-experience{
-  width:auto;
-  margin:0;
-  color: white; 
-}
-/*
-.resume-caption{
-  display:block;
-  margin-top:4px;
-  color: white; 
-}
-*/
-.resume-item{
-  margin-bottom:32px;
-  color: white; 
-}
 
-.resume-timestamp{
-  margin-top:4px;
-  color: white; 
-}
-
-.resume-experience{
-  margin-bottom:80px;
-  color: white;
-}
 .resume-featured{
   width:auto;
   color: white; 

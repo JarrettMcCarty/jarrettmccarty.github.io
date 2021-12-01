@@ -10,7 +10,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed:60,
-      strings: ["Software Engineer", "Developer", "Learning", "Growing"],
+      strings: ["Software Engineer", "Developer", "SE", "Full Time"],
     });
   }, []);
 
@@ -29,7 +29,7 @@ export default function Intro() {
           <h3>with a passion for developing and working</h3> 
           <h3>with the ever-evolving world of code.</h3>
         </div>
-        <a href="#portfolio">
+        <a href="#exp">
           <img src="assets/down.png" alt="" />
         </a>
       </div>

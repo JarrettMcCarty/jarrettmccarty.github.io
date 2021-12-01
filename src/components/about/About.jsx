@@ -61,8 +61,8 @@ export default function Testimonials() {
       </div>
   */
   return (
-    <div className="testimonials" id="testimonials">
-      <h1>About me</h1>
+    <div className="testimonials" id="about">
+      <h1>About Me</h1>
     </div>
   );
 }

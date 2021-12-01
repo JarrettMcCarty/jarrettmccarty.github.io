@@ -1,5 +1,72 @@
 @import "../../global.scss";
-
+.grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  grid-column-gap:16px;
+  margin:0 72px 
+}
+.footer{
+  height:100vh;
+  display:flex;
+  position:relative;
+  overflow:hidden;
+}
+.footer-content{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  grid-column: 1 / span 3;
+  color: white;
+}
+.footer-hero-extra{
+  color:var(--color-primary-400);
+  color: white; 
+}
+.footer-description{
+  color:var(--color-primary-300);
+  margin-top:32px;
+  margin-bottom:40px;
+  color: white;
+}
+.footer-link{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  grid-column:11 / span 2;
+  color: white; 
+}
+.footer-link-item{
+  display:block;
+  text-align:right;
+  margin-top:8px;
+  font-weight:500;
+  color: white; 
+}
+.footer-link-item:first-child{
+  margin-top:0 
+}
+.footer-link-section{
+  margin-top:32px 
+}
+.footer-link-section:first-child{
+  margin-top:0 
+}
+.footer-link-item a{
+  display:inline;
+  color:var(--color-primary-400);
+  transition:var(--transition-linear) 
+}
+.footer-link-item a:hover{
+  color:var(--color-primary-100) 
+}
+.footer-window-item:nth-child(2){
+  transform:translateX(-240px);
+  -webkit-transform:translateX(-240px) 
+}
+.footer-window-item:last-child{
+  transform:translateX(240px);
+  -webkit-transform:translateX(240px) 
+}
 .contact {
   background-color: white;
   display: flex;

@@ -58,7 +58,7 @@ export default function Portfolio() {
   }, [selected]);
 
   return (
-    <div className="resume-grid">
+        <div className="grid" id="exp">
           <div className="resume-experience">
             <h3 className="resume-heading">Experience</h3>
             <div className="resume-item">
@@ -88,12 +88,12 @@ export default function Portfolio() {
             <div className="resume-item">
               <h5 className="resume-title">Columbia College</h5>
               <h6 className="resume-caption">
-                <div className="resume-role">B.S Computer Science w/ Minor in Mathematics<div className="dot"></div></div>
+                <div className="resume-role">B.S Computer Science with a Minor in Mathematics<div className="dot"></div></div>
                 <div className="resume-timestamp">August 2016 - May 2020</div>
               </h6>
             </div>
           </div>
-          </div>
+        </div>
           /*
     <div className="portfolio" id="portfolio">
       <h1> Experience & Portfolio</h1>
