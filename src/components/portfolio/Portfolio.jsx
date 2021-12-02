@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import classnames from 'classnames';
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
@@ -58,7 +59,8 @@ export default function Portfolio() {
   }, [selected]);
 
   return (
-        <div className="grid" id="exp">
+    <div className={classnames('home')}>
+        <div className="resume grid" id="exp">
           <div className="resume-experience">
             <h3 className="resume-heading">Experience</h3>
             <div className="resume-item">
@@ -93,6 +95,7 @@ export default function Portfolio() {
               </h6>
             </div>
           </div>
+        </div>
         </div>
           /*
     <div className="portfolio" id="portfolio">

@@ -9,74 +9,84 @@ export default function Works() {
       icon: "./assets/mobile.png",
       title: "PitchOnline",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+        "Work in progress C# desktop app. Demonstrating MVVM & Dependency Injection patterns for a Online/Local AI card game called Pitch. ",
         github:
-        "https://www.github.com/JarrettMcCarty"
+        "https://github.com/JarrettMcCarty/PitchOnline"
     },
     {
       id: "2",
       icon: "./assets/globe.png",
       title: "CardGameAPI",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+        "Work in progress node.js API that works in cojunction with PitchOnline app to perform user login, register, lobby management, gamestate, etc.",
       github:
-          "https://www.github.com/JarrettMcCarty"
+          "https://github.com/JarrettMcCarty/CardGameAPI"
     },
     {
       id: "3",
       icon: "./assets/writing.png",
       title: "QuadTree",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        "Final Project for my Data Structures class. Visual representation of the QuadTree data structure in C++.",
       bkgrd:
       "",
       github:
-      "https://www.github.com/JarrettMcCarty"
+      "https://www.github.com/JarrettMcCarty/CISS-350-QuadTree"
     },
     {
       id: "4",
       icon: "./assets/writing.png",
       title: "Tic-Tac-Toe",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        "Final project for Assembly language. Tic-Tac-Toe wrote in assembly language with an AI opponent.",
       bkgrd:
       "",
       github:
-      "https://www.github.com/JarrettMcCarty"
+      "https://github.com/JarrettMcCarty/CISS-360-Tic-Tac-Toe"
     },
     {
       id: "5",
       icon: "./assets/writing.png",
       title: "OthelloAI",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        "Final project for Artificial Inteligence course. Othello AI that was used in a class tournament where each student pitted their AI against the others by reading move from a site using that move to calculate game state and return move. Used Alpha beta pruning etc.",
       bkgrd:
       "",
       github:
-      "https://www.github.com/JarrettMcCarty"
+      "https://github.com/JarrettMcCarty/CISS-450-Othello-AI"
     },
     {
       id: "6",
       icon: "./assets/writing.png",
       title: "Lyght",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        "Work In progress personal Game Engine. Always wanted to do dev in game development and this is a first step project for understanding game engine design.",
       bkgrd:
       "",
       github:
-      "https://www.github.com/JarrettMcCarty"
+      "https://github.com/JarrettMcCarty/Lyght"
+    },
+    {
+      id: "7",
+      icon: "./assets/writing.png",
+      title: "OpenGL RoboArm",
+      desc:
+        "Computer Graphics course project to model a robotic arm in OpenGL and allow it to have full movement given user control.",
+      bkgrd:
+      "",
+      github:
+      "https://github.com/JarrettMcCarty/CISS-380-OpenGL-RoboticArm"
+    },
+    {
+      id: "7",
+      icon: "./assets/writing.png",
+      title: "OpenGL Random Terrain Gen",
+      desc:
+        "Computer Graphics course project to create a random terrain.",
+      bkgrd:
+      "",
+      github:
+      "https://github.com/JarrettMcCarty/CISS-380-OpenGL-RandomTerrain"
     },
   ];
 
@@ -98,7 +108,7 @@ export default function Works() {
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
-                    <img src={d.icon} alt="" />
+                  <i class="fas fa-code"></i>
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>

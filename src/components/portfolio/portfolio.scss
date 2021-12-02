@@ -1,36 +1,39 @@
 @import "../../global.scss";
 
-.resume-grid
-{
-  color: black;
-}
 
 body {background-color: black;}
   .resume{
     margin-top:120px;
-    display:flex;
-    grid-column:3 / span 8 
+    display: flex;
+    grid-column: 3 / span 8;
+    width: 550%;
 }
+
 .grid{
-  /*
+  
   display:grid;
   grid-template-columns:repeat(12,1fr);
   grid-column-gap:16px;
   margin:0 72px;
-  */
-  display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 200px));
-  justify-content: space-between;
+  //width: 100%;
 }
+
 .resume-experience{
-  width:calc(50% - 60px);
-  margin-right:120px;
+  width:calc(100%);
+  margin-right:10em;
   color: white; 
+  margin-left:20em;
+}
+
+.resume-timestamp{
+  margin-top: 4px;
+  margin-left:4px;
 }
 .resume-heading{
   margin-bottom:32px;
   color: white; 
 }
+
 .resume-title{
   font-weight:800;
   color: white; 
@@ -42,31 +45,30 @@ body {background-color: black;}
   font-weight:500;
   margin-top:8px;
   color: white; 
-  
+  /*
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  */
 }
+
 .resume-item{
   margin-bottom:24px;
   color: white; 
+  width: 100%;
 }
+/*
 .resume-item:last-child{
   margin-bottom:0;
   color: white; 
 }
-
-/*
-.resume-timestamp{
-  margin-left:auto;
-  color: white; 
-}
 */
+
 .resume-role
 {
   margin-top:4px;
   color: white;
+  width: auto;
   .dot {
     height: 5px;
     width: 5px;
@@ -96,11 +98,11 @@ h3{
 
 
 .resume-featured{
-  width:auto;
+  width:100%;
   color: white; 
-  margin-left: 50em;
+  margin-left: 10em;
 }
-
+/*
 .portfolio {
   background-color: black;
   display: flex;
@@ -181,3 +183,4 @@ h3{
     }
   }
 }
+*/
